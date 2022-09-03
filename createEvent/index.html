@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet"> 
+
+
+    <link rel="stylesheet" href="/createEvent/style.css">
+</head>
+<body>
+    <div class="mhtb001">
+        <div class="mhtbc002">
+            <div class="mhtbcd003">
+                CCE Create Event
+            </div>
+        </div>
+    </div>
+    <div class="bhtb001">
+        <div class="bhtbc002">
+            <form action="/event/create" method="post">
+                <h2>Creator Info</h2>
+                <br>
+                <label for="">Your Name:</label>
+                <br>
+                <input type="text" name="aname" id="" required>
+                <br><br>
+                <label for="">Your Email:</label>
+                <br>
+                <input type="email" name="aemail" id="" required>
+                <br><br><br>
+                <h2>Activity Info</h2>
+                <br>
+                <label for="">Activity Name:</label>
+                <br>
+                <input type="text" name="name" id="" required>
+                <br><br>
+                <label for="">Image:</label>
+                <br>
+                <input type="file" name="image" id="" required>
+                <br><br>
+                <label for="">
+                    Short Description (Recommended Size 20 words): 
+                    <p style="font-size: 0.75em; font-weight: bold; line-height: 1.5em;">
+                        If the text exceeds the recommended size there is no guarantee that it will all fit in the preview
+                    </p>
+                </label>
+                <input type="text" name="sdescription" id="" style="width: 500px;" required>
+                <br><br>
+                <label for="">Detailed Description:</label>
+                <br>
+                <textarea name="ddescription" id="" cols="100" rows="10" style="border: 1px solid black;" required></textarea>
+                <br><br>
+                <label for="">Requirements:</label>
+                <br>
+                <textarea name="requirements" id="" cols=80" rows="5" style="border: 1px solid black;"></textarea>
+                <br><br>
+                <label for="">
+                    Number of Hours:
+                    <p style="font-size: 0.75em; font-weight: bold; line-height: 1.5em;">
+                        Leave blank if the number of hours havn't been aproved
+                    </p>
+                </label>
+                <input type="number" style="width: 100px" name="hours">
+                <br><br>
+                <label for="">Keywords:</label>
+                <br>
+                <input type="text" name="keywords" id="" required>
+                <br><br>
+                <label for="">Application Link:</label>
+                <br>
+                <input type="text" name="link" required>
+                <br><br><br>
+                <h2>Key Dates</h2>
+                <br>
+                <label for="">Registration Open:</label>
+                <br>
+                <input type="text" name="opening" required>
+                <br><br>
+                <label for="">Registration Deadline:</label>
+                <br>
+                <input type="text" name="deadline" id="" required>
+                <br><br>
+                <label for="">Important Dates:</label>
+                <br>
+                <textarea name="dates" id="" cols="80" rows="5" style="border: 1px solid black;" required></textarea>
+                <br><br>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

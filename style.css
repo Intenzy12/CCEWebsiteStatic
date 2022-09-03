@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    outline: 0;
+    border: 0;
+    padding: 0;
+}
+
+.mlb001 {
+    height: 550px;
+    background-image: radial-gradient(at 0 0, #FF8A8A, #A30000);
+    border-radius: 0 0 2000px 2000px / 10vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 600px;
+    grid-template-rows: 200px 300px;
+    grid-template-areas: "title" "logo";
+    grid-gap: 30px;
+}
+
+.mlbc002 {
+    grid-area: logo;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.mlbc002 img {
+    height: 100%;
+}
+
+.mlbd002 {
+    grid-area: title;
+    width: 100%;
+    height: 100%;
+}
+
+.mlbdt003 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 130px;
+    font-family: teko;
+    position: relative;
+    color: white;
+}
+
+.mlbdt003::after {
+    width: 100%;
+    content: '';
+    height: 5px;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+}
+
+.mc001 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 220px);
+    grid-auto-rows: 320px;
+    flex-wrap: wrap;
+    padding: 3em 2em;
+    border-radius: 15px;
+}
+
+.mct001 {
+    min-width: 200px;
+    height: 300px;
+    /* background-color: blue; */
+    position: relative;
+     /*background-color: rgba(0, 0, 0, 0.719); */
+    background-blend-mode: multiply;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.mctn002 {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.233);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    border: white solid;
+    border-width: 3px 0 0 0;
+    transition: 0.8s;
+}
+
+.mctn003 {
+    color: rgb(255, 255, 255);
+    background-color:rgba(0, 0, 0, 0.6);
+    display: flex;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: Roboto;
+    height: 60px;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0 20px 0 20px;
+    align-items: center;
+    border: solid rgba(255, 255, 255, 0.37);
+    border-width: 0 0 1px 0;
+}
+
+.mctd003 {
+    color:rgb(255, 255, 255);
+    background-color:rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 160px;
+    font-size: 0.9em;
+    line-height: 0.97em;
+    text-align: left;
+    padding: 10px 8px;
+    overflow: scroll;
+}
+
+.mctb003 {
+    height: 50px;
+    display: flex;
+    background-color:rgba(0, 0, 0, 0.6);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mctb003 div {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 0.8em;
+    --mctbmcolor: rgb(196, 196, 196);
+    color: var(--mctbmcolor);
+    border: 2px solid var(--mctbmcolor);
+    border-radius: 15px;
+}
+
+.mct001:hover .mctn002 {
+    height: 270px;
+}
+
+.mc001 a {
+    text-decoration: none;
+}
+
+.mc001 a:hover div {
+    --mctbmcolor: white;
+}
+
+[club=powerchair]
+{
+    background-image: url("http://storage.rayados.com/noticias/g/16294_Alfonso-Alvarado-Rayados-Powerchair.jpg");
+    background-size:cover;
+    align-items: center;
+}
+
+[club=milesforsmiles]
+{
+    background-image: url("https://res.cloudinary.com/letsdothiscom/image/upload/v1636465151/event-assets/ektsozx6utk9xcdeprup.jpg");
+    background-size:cover;
+    align-items: center;
+}
+
+[club=techo]
+{
+    background-image: url("https://mexico.techo.org/wp-content/uploads/sites/16/2022/01/B70I2644-1-scaled.jpg");
+    background-size:cover;
+    align-items: center;
+}
+[club=unidos]
+{
+    background-image: url("https://www.unidos.com.mx/wp-content/uploads/2019/08/LKEQ5751.jpg");
+    background-size:cover;
+    align-items: center;
+}
+[club=nhs]
+{
+    background-image: url("https://www.nhs.us/wordpress/wp-content/uploads/2021/05/NHS_Island_Pacific_Academy_2_1024x723.jpg");
+    background-size:cover;
+    align-items: center;
+}
+
