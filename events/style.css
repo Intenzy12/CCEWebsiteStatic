@@ -181,4 +181,8 @@ th, td {
     .gcont {
         grid-template-columns: 100%;
     }
+
+    .title {
+        font-size: 30pt;
+    }
 }
