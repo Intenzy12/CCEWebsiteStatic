@@ -18,6 +18,50 @@
     }
 } 
 
+.wrapper{
+    width: 95%;
+    margin: 0 auto; 
+}
+#search-container{
+    margin: 1em 0;
+}
+#search-container input{
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid;
+    padding: 1em 0.3em; 
+}
+#search-container input:focus {
+    border-bottom-color: blue;
+}
+#search-container button{
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: lightskyblue;
+    color: white;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+.filterbtn{
+    border: 2px solid purple;
+    background-color: transparent;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    color: purple;
+    cursor: pointer;
+}
+.filterbtn:hover{
+    background-color: purple;
+    color: white;
+}
+.filterbtn.active{
+    background-color: purple;
+    color: white;
+}
+.show{
+    display: block;
+}
+
 
 .mlb001 {
     height: 550px;
@@ -105,6 +149,7 @@
     background-blend-mode: multiply;
     border-radius: 15px;
     overflow: hidden;
+    /* display: none;  */
 }
 
 .mctn002 {
@@ -215,4 +260,36 @@
     background-size:cover;
     align-items: center;
 }
+[club=vicovalores]
+{
+    background-image: url("https://www.globalgiving.org/pfil/51623/ph_51623_201377.jpg");
+    background-size:cover;
+    align-items: center;
+}
 
+[club=macroeventos]
+{
+    background-image: url("https://www.sdespierto.es/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBadz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6dda6c94c3d79eb4b8c7975b67938486ac04cd8b/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lPTVRBd01IZ3hNREF3QmpvR1JWUT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--3f49b04d2d9e51ef2703f33e797d3b71d9748a3b/Cabecera%20eventos.JPG");
+    background-size:cover;
+    background-position: center;
+}
+[club=microposada]
+{
+    background-image: url("https://storage.googleapis.com/00_sonardespierto/uploads/lines/article/hero_image/21/rrmm.JPG");
+    background-size:cover;
+    background-position: left;
+}
+
+[club=cruzdeplata]
+{
+    background-image: url("https://www.meganoticias.mx/uploads/noticias/8-de-mayo-dia-mundial-de-la-cruz-roja-241144.jpeg");
+    background-size:cover;
+    background-position: center;
+}
+
+[club=creciendojuntos]
+{
+    background-image: url("https://www.aedcr.com/sites/default/files/2022-05/foto_creciendo_juntos_0.jpg");
+    background-size:cover;
+    background-position: center;
+}
