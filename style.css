@@ -299,3 +299,21 @@
     background-size:cover;
     background-position: center;
 }
+[club=robotics]
+{
+    background-image: url("/images/robotics.jpg");
+    background-size:cover;
+    background-position: center;
+}
+[club=chess]
+{
+    background-image: url("/images/chess.png");
+    background-size:cover;
+    background-position: center;
+}
+[club=flagfootball]
+{
+    background-image: url("/images/flagfootball.jpg");
+    background-size:cover;
+    background-position: left;
+}
