@@ -228,6 +228,12 @@
     --mctbmcolor: white;
 }
 
+[club=computerscience]
+{
+    background-image: url("/images/computerscience.png");
+    background-size:cover;
+    
+}
 [club=powerchair]
 {
     background-image: url("http://storage.rayados.com/noticias/g/16294_Alfonso-Alvarado-Rayados-Powerchair.jpg");
@@ -307,7 +313,7 @@
 }
 [club=chess]
 {
-    background-image: url("/images/chess.png");
+    background-image: url("https://img.freepik.com/premium-photo/chess-game-clever-mind-beautiful-smart-kids-having-great-time-enjoying-playing-chess-together-home-interior-concept-intellectual-board-games-logic-development-kids_328764-7905.jpg?w=2000");
     background-size:cover;
     background-position: center;
 }
@@ -344,6 +350,18 @@
 [club=bookcleanup]
 {
     background-image: url("https://st2.depositphotos.com/1031551/10656/i/450/depositphotos_106561206-stock-photo-high-stack-of-books.jpg");
+    background-size:cover;
+    background-position: center;
+}
+[club=cruzrosaboteada]
+{
+    background-image: url("http://storage.rayados.com/noticias/g/13316.jpg");
+    background-size:cover;
+    background-position: center;
+}
+[club=gymnasticsclasses]
+{
+    background-image: url("https://static01.nyt.com/images/2012/11/01/fashion/01GYM1_SPAN/01ZGYM1-superJumbo.jpg");
     background-size:cover;
     background-position: center;
 }
