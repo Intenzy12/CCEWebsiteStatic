@@ -228,6 +228,12 @@
     --mctbmcolor: white;
 }
 
+[club=wallpainting]
+{
+    background-image: url("/images/wallpainting.jpg");
+    background-size:cover;
+    
+}
 [club=computerscience]
 {
     background-image: url("/images/computerscience.png");
@@ -240,7 +246,6 @@
     background-size:cover;
     
 }
-
 [club=milesforsmiles]
 {
     background-image: url("https://res.cloudinary.com/letsdothiscom/image/upload/v1636465151/event-assets/ektsozx6utk9xcdeprup.jpg");
