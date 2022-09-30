@@ -228,6 +228,10 @@
     --mctbmcolor: white;
 }
 
+.closed {
+    filter:brightness(0.4) saturate(0);
+}
+
 [club=tennis]
 {
     background-image: url("/images/tennislogo.png");
