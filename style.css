@@ -228,6 +228,13 @@
     --mctbmcolor: white;
 }
 
+[club=tennis]
+{
+    background-image: url("/images/tennislogo.png");
+    background-size:cover;
+    background-position: center;
+    
+}
 [club=wallpainting]
 {
     background-image: url("/images/wallpainting.jpg");
