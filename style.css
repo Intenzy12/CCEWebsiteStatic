@@ -232,6 +232,14 @@
     filter:brightness(0.4) saturate(0);
 }
 
+[club=cardiochavitos]
+{
+    background-image: url("/images/cardiochavitoslogo.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
 [club=tennis]
 {
     background-image: url("/images/tennislogo.png");
