@@ -389,3 +389,18 @@
     background-size:cover;
     background-position: center;
 }
+
+[club=halloweenfundraiser]
+{
+    background-image: url("https://cdn.diys.com/wp-content/uploads/2015/09/halloween-treat-bags-1.jpg");
+    background-size:cover;
+    background-position: right;
+}
+
+[club=lostandfoundcleanup]
+{
+    background-image: url("https://static01.nyt.com/images/2015/06/26/nyregion/26LOSTANDFOUND/26LOSTANDFOUND-superJumbo.jpg");
+    background-size:cover;
+    background-position: center;
+}
+
