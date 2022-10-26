@@ -232,6 +232,14 @@
     filter:brightness(0.4) saturate(0);
 }
 
+[club=riocleanup]
+{
+    background-image: url("/images/riocleanuplogo.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
 [club=cardiochavitos]
 {
     background-image: url("/images/cardiochavitoslogo.png");
