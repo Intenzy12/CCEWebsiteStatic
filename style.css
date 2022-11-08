@@ -411,4 +411,15 @@
     background-size:cover;
     background-position: center;
 }
-
+[club=wallpainting2]
+{
+    background-image: url("https://st.focusedcollection.com/16485780/i/650/focused_250559952-stock-photo-community-volunteers-painting-vibrant-mural.jpg");
+    background-size:cover;
+    background-position: center;
+}
+[club=posadamasutiles]
+{
+    background-image: url("http://difelsalto.com/wp-content/uploads/2019/12/678.jpg");
+    background-size:cover;
+    background-position: right;
+}
