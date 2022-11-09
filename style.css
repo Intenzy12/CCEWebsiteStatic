@@ -232,6 +232,18 @@
     filter:brightness(0.4) saturate(0);
 }
 
+.closed .mctbo004 {
+    display: none;
+}
+
+[club=piano]
+{
+    background-image: url("/images/piano.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
 [club=riocleanup]
 {
     background-image: url("/images/riocleanuplogo.jpg");
