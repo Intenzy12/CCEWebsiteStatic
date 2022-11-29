@@ -236,6 +236,14 @@
     display: none;
 }
 
+[club=sacposada1]
+{
+    background-image: url("/images/sacposada.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
 [club=piano]
 {
     background-image: url("/images/piano.jpg");
