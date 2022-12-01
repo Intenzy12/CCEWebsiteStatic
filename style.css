@@ -236,6 +236,14 @@
     display: none;
 }
 
+[club=sonardespierto]
+{
+    background-image: url("/images/sonardespiertologo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
 [club=sacposada1]
 {
     background-image: url("/images/sacposada.png");
