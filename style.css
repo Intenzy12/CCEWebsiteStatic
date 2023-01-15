@@ -236,6 +236,61 @@
     display: none;
 }
 
+[club=anspac]
+{
+    background-image: url("/images/anspac-group.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+[club=huasteca-cleanup]
+{
+    background-image: url("/images/cleanup-group2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+[club=allegretto]
+{
+    background-image: url("/images/allegretto-group2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+[club=dance-lessons]
+{
+    background-image: url("/images/dance-lessons-group2.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: 3%;
+
+}
+[club=art-lessons]
+{
+    background-image: url("/images/art-lessons-group2.jpg");
+    background-size: 225%;
+    background-repeat: repeat;
+    background-position: 30%;
+
+}
+[club=soccer-lessons]
+{
+    background-image: url("/images/soccer-lessons-group2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30%;
+
+}
+[club=casa-monarca]
+{
+    background-image: url("/images/casa-monarca-group.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
 [club=sonardespierto]
 {
     background-image: url("/images/sonardespiertologo.png");
