@@ -236,6 +236,14 @@
     display: none;
 }
 
+[club=matilda-bookclub]
+{
+    background-image: url("/images/matilda-bookclub-logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
 [club=anspac]
 {
     background-image: url("/images/anspac-group.jpg");
@@ -436,7 +444,7 @@
 {
     background-image: url("/images/flagfootball.jpg");
     background-size:cover;
-    background-position: left;
+    background-position: 12%;
 }
 [club=artclasses]
 {
