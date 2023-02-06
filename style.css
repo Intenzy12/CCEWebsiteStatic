@@ -236,6 +236,22 @@
     display: none;
 }
 
+[club=effeta]
+{
+    background-image: url("/images/effeta.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+[club=wallpainting-semester-2]
+{
+    background-image: url("/images/wallpainting\ logo.png");
+    background-size: 170%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
 [club=unidos1]
 {
     background-image: url("/images/unidos\ logo.png");
