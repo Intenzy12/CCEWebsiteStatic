@@ -390,8 +390,9 @@
 }
 [club=milesforsmiles]
 {
-    background-image: url("https://res.cloudinary.com/letsdothiscom/image/upload/v1636465151/event-assets/ektsozx6utk9xcdeprup.jpg");
-    background-size:cover;
+    background-image: url("/images/mileslogo.png");
+    background-size:contain;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
