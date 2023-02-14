@@ -236,6 +236,16 @@
     display: none;
 }
 
+[club=nuevo-amanecer]
+{
+    background-image: url("/images/nuevo\ amanecer\ logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #41B0F2;
+    background-blend-mode: normal;
+
+}
 [club=effeta]
 {
     background-image: url("/images/effeta.jpg");
