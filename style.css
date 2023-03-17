@@ -236,6 +236,14 @@
     display: none;
 }
 
+[club=caritas]
+{
+    background-image: url("/images/caritas.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
 [club=nuevo-amanecer]
 {
     background-image: url("/images/nuevo\ amanecer\ logo.png");
