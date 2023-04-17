@@ -236,6 +236,22 @@
     display: none;
 }
 
+[club=dif]
+{
+    background-image: url("/images/dif-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+[club=carrera-azul]
+{
+    background-image: url("/images/carrera-azul-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
 [club=caritas]
 {
     background-image: url("/images/caritas.png");
