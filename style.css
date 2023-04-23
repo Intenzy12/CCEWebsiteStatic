@@ -236,9 +236,9 @@
     display: none;
 }
 
-[club=masUtiles]
+[club=MasUtiles]
 {
-    background-image: url("/images/mas-utiles.png");
+    background-image: url("/images/mas-utiles.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
