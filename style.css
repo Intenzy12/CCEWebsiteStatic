@@ -236,6 +236,14 @@
     display: none;
 }
 
+[club=masUtiles]
+{
+    background-image: url("/images/mas-utiles.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
 [club=dif]
 {
     background-image: url("/images/dif-logo.png");
