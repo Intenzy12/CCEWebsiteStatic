@@ -236,6 +236,13 @@
     display: none;
 }
 
+[club=cruzroja]
+{
+    background-image: url("/images/cruzroja.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 [club=MasUtiles]
 {
     background-image: url("/images/mas-utiles.jpg");
