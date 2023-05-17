@@ -1,590 +1,419 @@
+@font-face {
+    font-family: "Allura";
+    src: url("/assets/Allura-Regular.ttf");
+}
+
 * {
-    margin: 0;
-    outline: 0;
     border: 0;
     padding: 0;
-}
-
- @media screen and (min-width: 401px) {
-    .mlbdt003{
-        font-size: 120px;
-    }
-} 
-
-@media screen and (max-width: 400px) {
-
-    .mlbdt003{
-        font-size: 20vw;
-    }
-} 
-
-.wrapper{
-    width: 95%;
-    margin: 0 auto; 
-}
-#search-container{
-    margin: 1em 0;
-}
-#search-container input{
-    background-color: transparent;
-    width: 40%;
-    border-bottom: 2px solid;
-    padding: 1em 0.3em; 
-}
-#search-container input:focus {
-    border-bottom-color: blue;
-}
-#search-container button{
-    padding: 1em 2em;
-    margin-left: 1em;
-    background-color: lightskyblue;
-    color: white;
-    border-radius: 5px;
-    margin-top: 0.5em;
-}
-.filterbtn{
-    border: 2px solid purple;
-    background-color: transparent;
-    padding: 1em 2.2em;
-    border-radius: 3em;
-    color: purple;
-    cursor: pointer;
-}
-.filterbtn:hover{
-    background-color: purple;
-    color: white;
-}
-.filterbtn.active{
-    background-color: purple;
-    color: white;
-}
-.show{
-    display: block;
-}
-
-
-.mlb001 {
-    height: 550px;
-    background-image: radial-gradient(at 0 0, #FF8A8A, #A30000);
-    border-radius: 0 0 2000px 2000px / 10vw;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    grid-template-columns: 600px;
-    grid-template-rows: 200px 300px;
-    grid-template-areas: "title" "logo";
-    grid-gap: 30px;
-}
-
-.mlbc002 {
-    grid-area: logo;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    /* background-color: red; */
-}
-
-.mlbc002 img {
-    height: 100%;
-}
-
-.mlbd002 {
-    grid-area: title;
-    width: 100%;
-    height: 100%;
-}
-
-.mlbdt003 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    font-family: teko;
-    color: white;
-    position: relative;
-
-    
-}
-
-.mlbdt003::after {
-    width: 100%;
-    content: '';
-    height: 5px;
-    position: absolute;
-    background-color: white;
-    left: 0;
-    bottom: 0;
-}
-
-.mc001 {
-    display: grid;
-    flex-wrap: wrap;
-    padding: 3em 2em;
-    border-radius: 15px;
-
-    /* Centering Grid Items */
-    
-    /* justify-content: center;
-    align-content: center;
-    grid-auto-flow: column;
-    gap: 30px; */
-
-
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, 230px);
-    grid-auto-rows: 320px;
-
-}
-
-.mct001 {
-    min-width: 200px;
-    height: 300px;
-    /* background-color: blue; */
-    position: relative;
-     /*background-color: rgba(0, 0, 0, 0.719); */
-    background-blend-mode: multiply;
-    border-radius: 15px;
-    overflow: hidden;
-    /* display: none;  */
-}
-
-.mctn002 {
-    height: 60px;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.233);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    border: white solid;
-    border-width: 3px 0 0 0;
-    transition: 0.8s;
-}
-
-.mctn003 {
-    color: rgb(255, 255, 255);
-    background-color:rgba(0, 0, 0, 0.6);
-    display: flex;
+    outline: 0;
+    margin: 0;
     box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    font-family: Roboto;
-    height: 60px;
-    font-size: 1.3em;
+}
+
+html {
+    --title-colors: #981010;
+    --subtitle-colors: red;
+    overflow: none;
+}
+
+body {
+    --background-color: rgb(99, 26, 26);
+    background-color: var(--background-color);
+}
+
+h3 {
+    font-family: "Allura", "EB Garamond", serif;
+    word-spacing: 10pt;
+    color: var(--subtitle-colors);
+}
+
+h2 {
+    font-family: "EB Garamond", serif;
+    color: var(--title-colors);
+    font-size: 1.8em;
     font-weight: bold;
-    padding: 0 20px 0 20px;
-    align-items: center;
-    border: solid rgba(255, 255, 255, 0.37);
-    border-width: 0 0 1px 0;
+    line-height: 1em;
+    text-align: center;
 }
 
-.mctd003 {
-    color:rgb(255, 255, 255);
-    background-color:rgba(0, 0, 0, 0.6);
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    height: 160px;
-    font-size: 0.9em;
-    line-height: 0.97em;
-    text-align: left;
-    padding: 10px 8px;
+h1 {
+    font-family: "Anton", sans-serif;
+    font-size: clamp(3em, 16vw, 20em);
+    color: var(--title-colors)
+}
+
+.poster {
+    background-image: radial-gradient(at center, rgb(122, 122, 122) 20%, rgb(243, 243, 243) 20%);
+    background-size: 15px 15px;
+    background-repeat: repeat;
+    width: 100vw;
+    height: calc(100vh + 700px);
+}
+
+.title {
+    font-size: 1em;
+    text-align: center;
+    
+}
+
+.title h3 {
+    font-size: clamp(1em, 4vw, 5em);
+}
+
+.title h1 {
+    left: 0px;
+}
+
+.seperator {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    position: absolute;
+    --position-top: 0;
+    --position-left: 0;
+    width: clamp(300px, 50%, 100vw);
+    aspect-ratio: 1/1;
+    background-color: black;
+    top: var(--position-top);
+    left: var(--position-left);
+    overflow: hidden;
+}
+
+.seperator .foreground {
+    position: absolute;
+    top: var(--position-top);
+    left: var(--position-left)
+}
+
+.foreground, .background {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+}
+
+.background {
+    --title-colors: rgb(99, 11, 11);
+    --subtitle-colors: #733737;
+}
+
+.foreground {
+    --title-colors: rgb(162, 29, 29);
+    --subtitle-colors: rgb(237, 228, 229);
+}
+
+.slidebox {
+    filter: brightness(30%) blur(5px);
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slidebox img {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 2s opacity;
+}
+
+.slidebox img[data-active="true"]
+{
+    opacity: 1;
+}
+
+@media (pointer:coarse)
+{
+    .seperator .foreground {
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+    }
+
+    .seperator {
+        top: -50vh;
+        left: -50vw;
+    }
+}
+
+.eventback {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    display: block;
+    background-color: var(--background-color);
+}
+
+.eventlist {
+    position: relative;
+    top: -500px;
+    width: 100vw;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.eventcontainer {
+    margin: 45px;
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    column-gap: 70px;
+    row-gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.capsule {
+    width: 400px;
+    height: 260px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 20px;
+    position: relative;
+}
+
+.capsule .eventimage {
+    max-width: 250px;
+    border-radius: 20px;
+    max-height: 200px;
+    position: relative;
+    top: -15px;
+    left: -50px;
+    overflow: hidden;
+}
+
+.eventimage::after {
+    position: absolute;
+    content: attr(data-info);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: rgb(240, 240, 240);
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    transition: 0.4s opacity;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 10px;
+    paddinf-top: 10px;
+}
+
+.capsule:hover .eventimage::after {
+    opacity: 0.9;
+}
+
+.eventimage img {
+    object-fit: cover;
+    object-position: top;
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.capsule .elements {
+    position: absolute;
+    top: 30px;
+    left: 55%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.capsule .elements::after {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    content: '';
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(223, 223, 223, 0), rgb(223, 223, 223));
+
+}
+
+.capsule .buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex: 1;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+@media (pointer:coarse)
+{
+    .capsule .buttons {
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 550px)
+{
+    .capsule {
+        transform: scale(0.7);
+    }
+
+    .eventcontainer {
+        row-gap: 10px;
+    }
+}
+
+.capsule h2::after
+{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    bottom: -7px;
+}
+
+.capsule h2 {
+    position: relative;
+}
+
+.buttons div.apply {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+    color: rgb(68, 68, 68);
+}
+
+.buttons div {
+    transition: 0.4s transform;
+	cursor: pointer;
+}
+
+.buttons .info {
+    justify-content: end;
+}
+.buttons .apply {
+    justify-content: start;
+}
+
+.buttons div:hover {
+    transform: scale(1.2);
+    color: rgb(0, 0, 0);
+}
+
+.buttons>* {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    color: rgb(68, 68, 68);
+}
+
+.eventinfo[data-active="false"] {
+	display: none;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+}
+
+.eventinfo[data-active="true"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+}
+
+.eventinfo {
+    z-index: 1000;
+    transition: 1s;
+}
+
+.eventinfo .innerinfo {
+    background-color: rgb(223, 223, 223);
+    width: clamp(100px, 85vw, 700px);
+    height: 85vh;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.eventinfo h2 {
+    margin-bottom: 30px;
+}
+
+.eventinfo table {
+    border-collapse: collapse;
+}
+
+.eventinfo .tableinfo {
+    height: 100%;
     overflow: scroll;
 }
 
-.mctb003 {
+.eventinfo table * {
+    padding: 20px 5px;
+}
+
+.eventinfo table th {
+    width: 40%;
+    text-align: left;
+    vertical-align: top;
+}
+
+.eventinfo button {
+    background-color: rgba(0, 0, 0, 0);
+    width: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color:rgb(99, 11, 11);
+    font-weight: bold;
+    transition: 1.2s;
+}
+
+.eventinfo button:hover {
+    transform: scale(1.2)
+}
+
+.eventinfo .bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     height: 50px;
+    background-color: rgb(223, 223, 223);
     display: flex;
-    background-color:rgba(0, 0, 0, 0.6);
-    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
     align-items: center;
 }
 
-.mctb003 div {
-    height: 30px;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    font-size: 0.8em;
-    --mctbmcolor: rgb(196, 196, 196);
-    color: var(--mctbmcolor);
-    border: 2px solid var(--mctbmcolor);
-    border-radius: 15px;
-}
-
-.mct001:hover .mctn002 {
-    height: 270px;
-}
-
-.mc001 a {
+.eventinfo a {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.0em;
+    cursor: pointer;
+    color:rgb(99, 11, 11);
+    font-weight: bold;
+    transition: 1.2s;
     text-decoration: none;
+    text-align: center;
 }
 
-.mc001 a:hover div {
-    --mctbmcolor: white;
-}
-
-.closed {
-    filter:brightness(0.4) saturate(0);
-}
-
-.closed .mctbo004 {
-    display: none;
-}
-
-[club=cruzroja]
-{
-    background-image: url("/images/cruzroja.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-[club=MasUtiles]
-{
-    background-image: url("/images/mas-utiles.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 60%;
-
-}
-[club=dif]
-{
-    background-image: url("/images/dif-logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-[club=carrera-azul]
-{
-    background-image: url("/images/carrera-azul-logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-[club=caritas]
-{
-    background-image: url("/images/caritas.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-[club=nuevo-amanecer]
-{
-    background-image: url("/images/nuevo\ amanecer\ logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #41B0F2;
-    background-blend-mode: normal;
-
-}
-[club=effeta]
-{
-    background-image: url("/images/effeta.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-[club=wallpainting-semester-2]
-{
-    background-image: url("/images/wallpainting\ logo.png");
-    background-size: 170%;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-[club=unidos1]
-{
-    background-image: url("/images/unidos\ logo.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-
-}
-[club=matilda-bookclub]
-{
-    background-image: url("/images/matilda-bookclub-logo.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-
-}
-[club=anspac]
-{
-    background-image: url("/images/anspac-group.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-
-}
-[club=huasteca-cleanup]
-{
-    background-image: url("/images/cleanup-group2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-[club=allegretto]
-{
-    background-image: url("/images/allegretto-group2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-[club=dance-lessons]
-{
-    background-image: url("/images/dance-lessons-group2.png");
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: 3%;
-
-}
-[club=art-lessons]
-{
-    background-image: url("/images/art-lessons-group2.jpg");
-    background-size: 225%;
-    background-repeat: repeat;
-    background-position: 30%;
-
-}
-[club=soccer-lessons]
-{
-    background-image: url("/images/soccer-lessons-group2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 30%;
-
-}
-[club=casa-monarca]
-{
-    background-image: url("/images/casa-monarca-group.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-[club=sonardespierto]
-{
-    background-image: url("/images/sonardespiertologo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-[club=sacposada1]
-{
-    background-image: url("/images/sacposada.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-}
-[club=piano]
-{
-    background-image: url("/images/piano.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-}
-[club=riocleanup]
-{
-    background-image: url("/images/riocleanuplogo.jpg");
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-}
-[club=cardiochavitos]
-{
-    background-image: url("/images/cardiochavitoslogo.png");
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-}
-[club=tennis]
-{
-    background-image: url("/images/tennislogo.png");
-    background-size:cover;
-    background-position: center;
-    
-}
-[club=wallpainting]
-{
-    background-image: url("/images/wallpainting.jpg");
-    background-size:cover;
-    
-}
-[club=computerscience]
-{
-    background-image: url("/images/computerscience.png");
-    background-size:cover;
-    
-}
-[club=powerchair]
-{
-    background-image: url("http://storage.rayados.com/noticias/g/16294_Alfonso-Alvarado-Rayados-Powerchair.jpg");
-    background-size:cover;
-    
-}
-[club=milesforsmiles]
-{
-    background-image: url("/images/mileslogo.png");
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-[club=techo]
-{
-    background-image: url("https://mexico.techo.org/wp-content/uploads/sites/16/2022/01/B70I2644-1-scaled.jpg");
-    background-size:cover;
-    background-position: center;
-}
-[club=unidos]
-{
-    background-image: url("https://www.unidos.com.mx/wp-content/uploads/2019/08/LKEQ5751.jpg");
-    background-size:cover;
-    align-items: center;
-}
-[club=nhs]
-{
-    background-image: url("https://www.nhs.us/wordpress/wp-content/uploads/2021/05/NHS_Island_Pacific_Academy_2_1024x723.jpg");
-    background-size:cover;
-    align-items: center;
-}
-[club=vicovalores]
-{
-    background-image: url("https://www.globalgiving.org/pfil/51623/ph_51623_201377.jpg");
-    background-size:cover;
-    align-items: center;
-}
-
-[club=macroeventos]
-{
-    background-image: url("https://www.sdespierto.es/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBadz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6dda6c94c3d79eb4b8c7975b67938486ac04cd8b/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lPTVRBd01IZ3hNREF3QmpvR1JWUT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--3f49b04d2d9e51ef2703f33e797d3b71d9748a3b/Cabecera%20eventos.JPG");
-    background-size:cover;
-    background-position: center;
-}
-[club=microposada]
-{
-    background-image: url("https://storage.googleapis.com/00_sonardespierto/uploads/lines/article/hero_image/21/rrmm.JPG");
-    background-size:cover;
-    background-position: left;
-}
-
-[club=cruzdeplata]
-{
-    background-image: url("https://www.meganoticias.mx/uploads/noticias/8-de-mayo-dia-mundial-de-la-cruz-roja-241144.jpeg");
-    background-size:cover;
-    background-position: center;
-}
-
-[club=creciendojuntos]
-{
-    background-image: url("https://www.aedcr.com/sites/default/files/2022-05/foto_creciendo_juntos_0.jpg");
-    background-size:cover;
-    background-position: center;
-}
-[club=creciendojuntosvolunteers]
-{
-    background-image: url("https://supercostarica4.files.wordpress.com/2013/08/costa-rica-schools-main.jpg");
-    background-size:cover;
-    background-position: center;
-}
-[club=robotics]
-{
-    background-image: url("/images/robotics.jpg");
-    background-size:cover;
-    background-position: center;
-}
-[club=chess]
-{
-    background-image: url("https://img.freepik.com/premium-photo/chess-game-clever-mind-beautiful-smart-kids-having-great-time-enjoying-playing-chess-together-home-interior-concept-intellectual-board-games-logic-development-kids_328764-7905.jpg?w=2000");
-    background-size:cover;
-    background-position: center;
-}
-[club=flagfootball]
-{
-    background-image: url("/images/flagfootball.jpg");
-    background-size:cover;
-    background-position: 12%;
-}
-[club=artclasses]
-{
-    background-image: url("https://lillstreet.com/files/Kidtreet_web1.jpg");
-    background-size:cover;
-    background-position: center;
-}
-[club=basketballclasses]
-{
-    background-image: url("https://www.ussportscamps.com/media/images/basketball/nike/gallerystock/boys-nike-basketball-camp-dribbling-practice.jpg");
-    background-size:cover;
-    background-position: center;
-}
-[club=danceclasses]
-{
-    background-image: url("https://kidsstoppress.com/wp-content/uploads/2021/09/1535442302.BestDanceSchoolsinBengaluru-kidsstoppress.png");
-    background-size:cover;
-    background-position: center;
-}
-[club=musicclasses]
-{
-    background-image: url("https://www.bdssociety.com/wp-content/uploads/2021/03/music-teacher.jpg");
-    background-size:cover;
-    background-position: center;
-}
-[club=bookcleanup]
-{
-    background-image: url("https://st2.depositphotos.com/1031551/10656/i/450/depositphotos_106561206-stock-photo-high-stack-of-books.jpg");
-    background-size:cover;
-    background-position: center;
-}
-[club=cruzrosaboteada]
-{
-    background-image: url("http://storage.rayados.com/noticias/g/13316.jpg");
-    background-size:cover;
-    background-position: center;
-}
-[club=gymnasticsclasses]
-{
-    background-image: url("https://static01.nyt.com/images/2012/11/01/fashion/01GYM1_SPAN/01ZGYM1-superJumbo.jpg");
-    background-size:cover;
-    background-position: center;
-}
-
-[club=halloweenfundraiser]
-{
-    background-image: url("https://cdn.diys.com/wp-content/uploads/2015/09/halloween-treat-bags-1.jpg");
-    background-size:cover;
-    background-position: right;
-}
-
-[club=lostandfoundcleanup]
-{
-    background-image: url("https://static01.nyt.com/images/2015/06/26/nyregion/26LOSTANDFOUND/26LOSTANDFOUND-superJumbo.jpg");
-    background-size:cover;
-    background-position: center;
-}
-[club=wallpainting2]
-{
-    background-image: url("https://st.focusedcollection.com/16485780/i/650/focused_250559952-stock-photo-community-volunteers-painting-vibrant-mural.jpg");
-    background-size:cover;
-    background-position: center;
-}
-[club=posadamasutiles]
-{
-    background-image: url("http://difelsalto.com/wp-content/uploads/2019/12/678.jpg");
-    background-size:cover;
-    background-position: right;
+.eventinfo a:hover {
+    transform: scale(1.2)
 }
