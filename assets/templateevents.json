@@ -14,6 +14,22 @@
                 "Registration Closes": "May 18th, 2023",
                 "Dates and Schedules": "May 20th, 21st, 27th, 28th"
             }
-        }
+        },
+		{
+			"name": "BAZAR CRUZ ROSA ABP",
+			"info": "Volunteers will be helping out in Cruz Rosa’s annual market that will take place in Parque Arboleda. Students will help with the set up and the logistics of the event.",
+			"image": "/assets/images/Events/cruz-roja-abp.png",
+			"apply": "https://docs.google.com/forms/d/e/1FAIpQLSdIm2H-8nNBqOZOQPBxNF8RlfoDFqv0jFX1enMv1pjugJNJYQ/viewform",
+			"properties": {
+                "Description": "Patrol the event, make sure everything is running smoothly",
+                "Requirements": "Attend a mandatory induction and instruction meeting",
+                "Roles and Responsibilities": "Staff, the students will help in the logistics of the event, by making sure that the participants are in their places, and basically anything required by Cruz Rosa or Arboleda, so the event is running smoothly.",
+				"Positions Available": "8",
+                "Hours": "6 hrs",
+                "Registration Opens": " May 17, 2023",
+                "Registration Closes": " May 26, 2023",
+                "Dates and Schedules": "Thursday June 1th in A201 during LUNCH"
+			}
+		}
     ]
 }
